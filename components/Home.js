@@ -1,4 +1,4 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+//import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useState, useEffect } from 'react';
 import {
     StyleSheet,
@@ -11,6 +11,7 @@ import CustomButton from '../utils/CustomButton';
 import GlobalStyle from '../utils/GlobalStyle';
 import { useSelector, useDispatch } from 'react-redux';
 import {setName, setAge } from '../redux/actions'
+import SQLite from 'react-native-sqlite-storage';
 
 const db = SQLite.openDatabase(
     {

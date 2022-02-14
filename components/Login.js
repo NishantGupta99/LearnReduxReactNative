@@ -100,17 +100,17 @@ export default function Login({ navigation }) {
 
 
             <Text style={styles.text}>
-                Async Storage
+                redux
             </Text>
             <TextInput
                 style={styles.input}
                 placeholder='Enter your name'
-                onChangeText={(value) => setName(value)}
+                onChangeText={(value) => dispatch(setName(value))}
             />
             <TextInput
                 style={styles.input}
                 placeholder='Enter your age'
-                onChangeText={(value) => setAge(value)}
+                onChangeText={(value) => dispatch(setAge(value))}
             />
             <CustomButton
                 title='Login'
