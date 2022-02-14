@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import CustomButton from '../utils/CustomButton';
 import GlobalStyle from '../utils/GlobalStyle';
+import SQLite from 'react-native-sqlite-storage'
 
 export default function Home({ navigation, route }) {
 
